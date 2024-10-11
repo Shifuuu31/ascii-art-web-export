@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Ascii-art-web</title>
+</head>
+
+<body>
+    <center>
+        <h1>Ascii-art-Generator</h1>
+        <div class="main-container">
+            <form action="/ascii-art-web" method="post">
+                <div class="user-input">
+                    <textarea name="input" placeholder="Enter text"></textarea>
+                </div>
+                <div class="user-selection">
+                    <label><input type="radio" name="banner" value="standard" checked>standard</label>
+                    <label><input type="radio" name="banner" value="shadow">shadow</label>
+                    <label><input type="radio" name="banner" value="thinkertoy">thinkertoy</label>
+                </div>
+                <div class="user-submit">
+                    <input type="submit" value="Generate">
+                </div>
+            </form>
+            <!-- Form to select file format and download -->
+            <form action="/downloadfile" method="GET">
+                <select name="format" id="format">
+                    <option value="txt">TXT</option>
+                    <option value="html">HTML</option>
+                </select>
+
+                <button type="submit">Download</button>
+            </form>
+
+        </div>
+        <pre class="result-container">
+            {{.Result}}
+        </pre>
+    </center>
+
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+body {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/448/174/357/neon-4k-hd-best-for-desktop-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main-container {
+    margin-top: 50px;
+    display: inline-block;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.user-selection {
+    margin-bottom: 10px;
+}
+
+.user-selection label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.user-submit {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #218838;
+}
+
+.result-container {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 50px;
+    right: 50px;
+    top: 430px;
+    bottom: 50px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+select, button[type="submit"] {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 5px;
+}
+
+select {
+    appearance: none;
+    padding-right: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+button[type="submit"] {
+    
+    background: #28a745;
+}
+
+select:hover, button[type="submit"]:hover {
+    background: #0056b3;
+    
+}
+
+button[type="submit"]:hover {
+    background: #218838;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    .result-container {
+        left: 30px;
+        right: 30px;
+    }
+
+    .user-selection {
+        font-size: 14.4px;
+    }
+
+    input[type="submit"] {
+        padding: 8px 16px;
+        font-size: 14.4px;
+    }
+
+    select, button[type="submit"] {
+        font-size: 14.4px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 300px) {
+    h1 {
+        font-size: 12.8px;
+    }
+
+    textarea {
+        height: 30px;
+    }
+
+    .result-container {
+        left: 15px;
+        right: 15px;
+    }
+
+    .user-selection {
+        font-size: 9.6px;
+    }
+
+    input[type="submit"] {
+        padding: 6px 12px;
+        font-size: 9.6px;
+    }
+
+    select, button[type="submit"] {
+        font-size: 9.6px;
+        padding: 6px 12px;
+    }
+}

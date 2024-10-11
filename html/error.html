@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="/css/error.css">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <title>{{.StatusCode}} {{.ErrorMessage}}</title>
+</head>
+<body>
+    <div class="container-404">
+        <h1>{{.StatusCode}}</h1>
+        <p>{{.ErrorMessage}}</p>
+        <div class="back">
+            <a href="/">Back</a>
+        </div>
+    </div>
+</body>
+</html>
